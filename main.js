@@ -82,7 +82,7 @@ const view = {
 
   pairCards (...cards) {
     cards.forEach(card => {
-      card.className = 'card-paired'
+      card.classList.add('card-paired')
     })
   },
 
