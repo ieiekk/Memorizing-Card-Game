@@ -1,0 +1,148 @@
+body {
+  font-family: Nunito;
+  margin: 0;
+  padding: 0 20vw;
+}
+
+#cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.card {
+  flex: 7% 0 1;
+  border: 2px solid #e0e0e0;
+  margin: 2px;
+  box-sizing: border-box;
+  height: 150px;
+  width: 100px;
+  max-width: 120px;
+  min-width: 90px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 30%;
+  align-self: center;
+  margin: 20% auto;
+}
+
+.card p {
+  margin: 3px;
+  font-size: 16px;
+}
+
+.card p:last-child {
+  transform: rotate(180deg);
+}
+
+.card-back {
+  background: url("https://i.pinimg.com/564x/7c/95/e0/7c95e063acc8a050f43af6233da2a6de.jpg");
+  background-size: contain;
+}
+
+.card-back > * {
+  opacity: 0;
+}
+
+.card-paired {
+  background-color: rgb(221, 221, 221);
+}
+
+#header {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: end;
+  padding: 0 1vw;
+  margin: 15px 20px;
+}
+
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 12px;
+}
+
+.title > img {
+  height: 48px;
+}
+
+.title > h2 {
+  margin: 0
+}
+
+
+.score {
+  margin: 0;
+}
+
+.tried-times {
+  margin: 0;
+}
+
+.wrong {
+  animation-name: wrongAnimation;
+  animation-duration: 0.2s;
+  animation-iteration-count: 5;
+}
+
+@keyframes wrongAnimation {
+  100% {
+    border: 2px solid orange;
+  }
+}
+
+.finished {
+  position: fixed;
+  top: 40%;
+  width: 100%;
+  left: 0;
+  /* tra-nsform: translate(50%, 50%); */
+
+  display: flex;
+  flex-wrap: no-wrap;
+  flex-direction: column;
+  justify-content:center;
+  align-items: center;
+  gap: 15px;
+  background-color: black;
+  opacity: 70%;
+}
+
+.finished > h1 {
+  color: white;
+  white-space: nowrap;
+  font-size: 48px;
+  margin-bottom: 0px;
+}
+
+.finished > p {
+  display: flex;
+  align-items: center;
+  margin-top: 0px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer
+}
+
+.finished > p:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.fa-undo {
+  margin: 0 10px;
+}
+
+.invisible {
+  display: none;
+}

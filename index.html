@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Memorizing Game</title>
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+  
+</head>
+
+<body>
+  <!-- Title -->
+  <div id="header">
+    <div class="title">
+      <img src="https://cdn-icons-png.flaticon.com/512/107/107585.png" alt="logo">
+      <h2>Memorizing Game</h2>
+    </div>
+
+    <h2 class="score">Score: <span id="score">0</span></h2>
+    <p class="tried-times">You've tried: <span id="tried-times">0</span> times</p>
+  </div>
+
+  <!-- 牌桌 -->
+  <div id="cards">
+    <div class="card">
+      <p>4</p>
+      <img src="https://svgshare.com/i/btJ.svg">
+      <p>4</p>
+    </div>
+  </div>
+
+  <!-- Finished Screen -->
+  <div class="finished invisible">
+    <h1>Congratulations! You win!</h1>
+    <p>Retry?<i class="fas fa-undo fa-1x"></i></p>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.24.0/axios.min.js" integrity="sha512-u9akINsQsAkG9xjc1cnGF4zw5TFDwkxuc9vUp5dltDWYCSmyd0meygbvgXrlc/z7/o4a19Fb5V0OUE58J7dcyw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+<!-- 牌背樣式：https://i.imgur.com/X5nacsZ.png
+黑桃花色：https://svgshare.com/i/btJ.svg
+紅心花色：https://svgshare.com/i/bu8.svg
+方塊花色：https://svgshare.com/i/bto.svg
+梅花花色：https://svgshare.com/i/bsQ.svg
+遊戲圖示：https://cdn-icons-png.flaticon.com/512/107/107585.png -->
